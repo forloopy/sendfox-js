@@ -8,7 +8,7 @@ import SendFox_Campaigns from './classes/campaigns';
 import SendFox_Automations from './classes/automations';
 import SendFox_Unsubscribe from './classes/unsubscribe';
 
-export class SendFox {
+export default class SendFox {
 
 	api: any;
 	lists: any;

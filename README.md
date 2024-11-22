@@ -34,7 +34,7 @@ To get started using this library, follow the examples below.
 ### Import
 
 ```javascript
-import SendFox from 'forloopy/sendfox';
+import SendFox from '@forloopy/sendfox';
 ```
 
 ### Authenticate
