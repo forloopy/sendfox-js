@@ -1,4 +1,4 @@
-import SendFox_Lists_Contacts from './lists/contacts';
+import SendFox_Lists_Contacts from './lists/contacts.js';
 
 export default class SendFox_Lists {
 
@@ -45,7 +45,7 @@ export default class SendFox_Lists {
 			name: string,
 		}
 	): Promise <object> => {
-		const { buildQueryString } = await import('../utils/helpers');
+		const { buildQueryString } = await import('../utils/helpers.js');
 		const queryString = buildQueryString(props);
 		const res = await this.api.post(`/lists?${queryString}`); 
 		return await res.json();

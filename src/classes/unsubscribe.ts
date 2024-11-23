@@ -11,7 +11,7 @@ export default class SendFox_Unsubscribe {
 	run = async (
 		email: string
 	): Promise <object> => {
-		const { buildQueryString } = await import('../utils/helpers');
+		const { buildQueryString } = await import('../utils/helpers.js');
 		const queryString = buildQueryString({email});
 		const res = await this.api.patch(`/unsubscribe?${queryString}`); 
 		return await res.json();

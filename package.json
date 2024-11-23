@@ -1,17 +1,26 @@
 {
   "name": "@forloopy/sendfox",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/forloopy/sendfox-js",
+  "version": "1.0.3",
+  "description": "A Node.js library for interacting with the SendFox API.",
+  "homepage": "https://github.com/forloopy/sendfox-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forloopy/sendfox-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/forloopy/sendfox-js/issues"
+  },
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": ["dist"],
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["sendfox", "email-marketing", "api", "nodejs", "integration"],
+  "author": "@forloopy",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.7.4",

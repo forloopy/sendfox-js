@@ -1,12 +1,12 @@
 // Utils
-import SendFox_APIClient from './utils/client';
+import SendFox_APIClient from './utils/client.js';
 // Classes
-import SendFox_Me from './classes/me';
-import SendFox_Lists from './classes/lists';
-import SendFox_Contacts from './classes/contacts';
-import SendFox_Campaigns from './classes/campaigns';
-import SendFox_Automations from './classes/automations';
-import SendFox_Unsubscribe from './classes/unsubscribe';
+import SendFox_Me from './classes/me.js';
+import SendFox_Lists from './classes/lists.js';
+import SendFox_Contacts from './classes/contacts.js';
+import SendFox_Campaigns from './classes/campaigns.js';
+import SendFox_Automations from './classes/automations.js';
+import SendFox_Unsubscribe from './classes/unsubscribe.js';
 
 export default class SendFox {
 

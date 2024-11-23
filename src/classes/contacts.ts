@@ -18,7 +18,7 @@ export default class SendFox_Contacts {
 	getByEmail = async (
 		email: string
 	): Promise <object> => {
-		const { buildQueryString } = await import('../utils/helpers');
+		const { buildQueryString } = await import('../utils/helpers.js');
 		const queryString = buildQueryString({email});
 		const res = await this.api.get(`/contacts?${queryString}`); 
 		return await res.json();
@@ -29,7 +29,7 @@ export default class SendFox_Contacts {
 			page: string
 		}
 	): Promise <object> => {
-		const { buildQueryString } = await import('../utils/helpers');
+		const { buildQueryString } = await import('../utils/helpers.js');
 		const queryString = buildQueryString(params);
 		const res = await this.api.get(`/contacts?${queryString}`);
 		return await res.json();
@@ -49,7 +49,7 @@ export default class SendFox_Contacts {
 			lists?: string[]
 		}
 	): Promise <object> => {
-		const { buildQueryString } = await import('../utils/helpers');
+		const { buildQueryString } = await import('../utils/helpers.js');
 		const queryString = buildQueryString(params);
 		const res = await this.api.post(`/contacts?${queryString}`); 
 		return await res.json();
